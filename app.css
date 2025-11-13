@@ -49,8 +49,11 @@
 .arrow-list {
 	list-style-type: none;
 }
+	.arrow-list li {
+		margin: 0.5em 0;
+	}
 
 	.arrow-list li::before {
-		content: "⮚ ";
+		content: "> ";
 		/*color: var(--mud-palette-primary);*/
 	}
