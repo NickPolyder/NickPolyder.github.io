@@ -1,0 +1,59 @@
+﻿.margin-1-2 {
+	margin: 1.2em;
+}
+
+.margin-top-1-5 {
+	margin-top: 1.5em;
+}
+
+.padding-1-2 {
+	padding: 1.2em;
+}
+
+.avatar-extra-large {
+	width: 8em !important;
+	height: 8em !important;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.bg-education-bachelor {
+	background-color: green;
+	color: var(--mud-palette-white);
+}
+
+.bg-education-certificate {
+	background-color: yellow;
+	color: black;
+}
+
+.bg-education-default {
+	background-color: darkcyan;
+	color: var(--mud-palette-white);
+}
+
+.margin-1-2-left {
+	margin-left: 1.2em;
+}
+
+.margin-2-4-left {
+	margin-left: 2.4em;
+}
+
+.arrow-list {
+	list-style-type: none;
+}
+	.arrow-list li {
+		margin: 0.5em 0;
+	}
+
+	.arrow-list li::before {
+		content: "> ";
+		/*color: var(--mud-palette-primary);*/
+	}
