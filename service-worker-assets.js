@@ -1,13 +1,20 @@
 self.assetsManifest = {
   "version": "cH5vCFno",
   "assets": [
-    {
+    {				  
       "hash": "sha256-t4DZkvMgK7ZVCpb3eHArBDi+pxxL+5KWh0linVpCfDc=",
-      "url": "_content/Blazorade.Core/js/blazoradeCore.js"
+      "url": "_content/Blazorade.Core/js/blazoradeCore.js?v=1"
+    }, {				  
+      "hash": "sha256-t4DZkvMgK7ZVCpb3eHArBDi+pxxL+5KWh0linVpCfDc=",
+      "url": "_content/Blazorade.Core/js/blazoradeCore.js?v=1"
     },
     {
       "hash": "sha256-JzwUk+eCaop3b0Cs2ieT7sRY+kSdv9+OqGQdx23Qx+M=",
       "url": "_content/Blazorade.Mermaid/js/blazoradeMermaid.js"
+    },
+	{
+      "hash": "sha256-JzwUk+eCaop3b0Cs2ieT7sRY+kSdv9+OqGQdx23Qx+M=",
+      "url": "_content/Blazorade.Mermaid/js/blazoradeMermaid.js?v=1"
     },
     {
       "hash": "sha256-ZzHmYioOIMEX9F8thiw1Sc+cGGFHLtMWI4q4uvO13CQ=",
@@ -16,6 +23,10 @@ self.assetsManifest = {
     {
       "hash": "sha256-zR6goaoMpR/YVMMSTfCmVNo3kuPgOkjF/ovhkUhAkbk=",
       "url": "_content/MudBlazor/MudBlazor.min.js"
+    },
+	{
+      "hash": "sha256-zR6goaoMpR/YVMMSTfCmVNo3kuPgOkjF/ovhkUhAkbk=",
+      "url": "_content/MudBlazor/MudBlazor.min.js?v=1"
     },
     {
       "hash": "sha256-ud4PpT0ELfhzqIjCASMhUp7+szOayMCgOFvtJhKBhVE=",
