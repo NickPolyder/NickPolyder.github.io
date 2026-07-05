@@ -1,0 +1,5 @@
+€{
+  "commitSha": "#{COMMIT_SHA}#",
+  "runUrl": "#{RUN_URL}#"
+}
+
