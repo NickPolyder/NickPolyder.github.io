@@ -29,8 +29,8 @@
 }
 
 .bg-education-certificate {
-	background-color: yellow;
-	color: black;
+	background-color: #B45309;
+	color: #FFFFFF;
 }
 
 .bg-education-default {
@@ -53,7 +53,31 @@
 		margin: 0.5em 0;
 	}
 
+		.arrow-list li::before {
+			content: "> ";
+			/*color: var(--mud-palette-primary);*/
+		}
+
+/* Centered "Coming Soon" content using flex */
+.coming-soon-container {
+		min-height: 60vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+}
+
 	.arrow-list li::before {
 		content: "> ";
 		/*color: var(--mud-palette-primary);*/
+	}
+
+	/* Accessible focus styles for keyboard navigation */
+	button:focus-visible,
+	a:focus-visible,
+	input:focus-visible,
+	select:focus-visible,
+	textarea:focus-visible,
+	[tabindex]:focus-visible {
+		outline: 2px solid #0066CC;
+		outline-offset: 2px;
 	}

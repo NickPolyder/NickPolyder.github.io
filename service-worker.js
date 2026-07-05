@@ -1,4 +1,4 @@
-/* Manifest version: dTinaWOL */
+/* Manifest version: 7wNN4yC3 */
 // Caution! Be sure you understand the caveats before publishing an application with
 // offline support. See https://aka.ms/blazor-offline-considerations
 
@@ -10,7 +10,11 @@ self.addEventListener('fetch', event => event.respondWith(onFetch(event)));
 const cacheNamePrefix = 'offline-cache-';
 const cacheName = `${cacheNamePrefix}${self.assetsManifest.version}`;
 const offlineAssetsInclude = [ /\.dll$/, /\.pdb$/, /\.wasm/, /\.html/, /\.js$/, /\.json$/, /\.css$/, /\.woff$/, /\.png$/, /\.jpe?g$/, /\.gif$/, /\.ico$/, /\.blat$/, /\.dat$/ ];
-const offlineAssetsExclude = [ /^service-worker\.js$/ ];
+// version.json is stamped by the CD pipeline after publish, so its content no longer
+// matches the integrity hash baked into service-worker-assets.js. Excluding it from the
+// offline cache avoids an SRI failure that would abort service-worker install. It is
+// fetched fresh at runtime by the app instead.
+const offlineAssetsExclude = [ /^service-worker\.js$/, /^version\.json$/ ];
 
 // Replace with your base path if you are hosting on a subfolder. Ensure there is a trailing '/'.
 const base = "/";

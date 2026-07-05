@@ -1,4 +1,4 @@
 {
-  "commitSha": "e669969",
-  "runUrl": "https://github.com/NickPolyder/NP.WebSite/actions/runs/28751168495"
+  "commitSha": "#{COMMIT_SHA}#",
+  "runUrl": "#{RUN_URL}#"
 }
